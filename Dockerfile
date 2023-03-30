@@ -1,7 +1,7 @@
 # Stage 1
-FROM node:8 as react-build
+FROM node:16.17 as react-build
 WORKDIR /app
-COPY . ./
+COPY . .
 RUN npm install
 RUN npm run build
 
