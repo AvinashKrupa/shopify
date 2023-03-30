@@ -1,5 +1,6 @@
 # Stage 1
 FROM node:16.17 as react-build
+COPY . .
 RUN npm install --legacy-peer-deps
 RUN npm run build
 
